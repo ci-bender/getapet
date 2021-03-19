@@ -1,0 +1,27 @@
+{
+  "name": "GetAPet.eu",
+  "short_name": "GetAPet",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4fb6b5",
+  "description": "GetAPet is a free app keeping you connected to several animal shelters.",
+  "icons": [
+    {
+      "src": "\/assets\/favicons\/paw--colored.svg",
+      "sizes": "72x72 96x96 128x128 256x256 512x512"
+    }
+  ],
+  "related_applications":
+  [
+    {
+      "platform": "play",
+      "url": "",
+      "id": ""
+    },
+    {
+      "platform": "itunes",
+      "url": ""
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+.viewport-center {
+  position: fixed;
+}
+
+.center-center,
+.viewport-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-center {
+  position: absolute;
+  line-height: 1;
+}

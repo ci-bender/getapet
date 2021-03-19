@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+// Import styles
+@import "styles/fonts";
+@import "styles/colors";
+@import "styles/viewport";
+@import "styles/nojs";
+@import "styles/base";
+
+// Import Modules
+@import "styles/card";
+
+// Logo style classes
+@import "styles/logo";
