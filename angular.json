@@ -43,7 +43,7 @@
             "production": {
               "optimization": true,
               "outputHashing": "all",
-              "sourceMap": false,
+              "sourceMap": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -69,16 +69,16 @@
                 }
               ]
             },
-            "qa": {
+            "staging": {
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.qa.ts"
+                  "with": "src/environments/environment.staging.ts"
                 }
               ],
               "optimization": true,
               "outputHashing": "all",
-              "sourceMap": false,
+              "sourceMap": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -97,17 +97,6 @@
                 }
               ]
             },
-            "dev": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.dev.ts"
-                }
-              ],
-              "outputHashing": "all",
-              "extractLicenses": true,
-              "resourcesOutputPath": "assets"
-            },
 			      "ci": {
               "progress": false
             }
@@ -122,11 +111,8 @@
             "production": {
               "browserTarget": "getapet:build:production"
             },
-            "qa": {
-              "browserTarget": "getapet:build:qa"
-            },
-            "dev": {
-              "browserTarget": "getapet:build:dev"
+            "staging": {
+              "browserTarget": "getapet:build:staging"
             },
             "ci": {
               "progress": false
@@ -176,11 +162,8 @@
             "production": {
               "devServerTarget": "getapet:serve:production"
             },
-            "qa": {
-              "devServerTarget": "getapet:serve:qa"
-            },
-            "dev": {
-              "devServerTarget": "getapet:serve:dev"
+            "staging": {
+              "devServerTarget": "getapet:serve:staging"
             }
           }
         }

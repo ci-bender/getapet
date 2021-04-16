@@ -1,0 +1,17 @@
+export const environment = {
+  production: true,
+  configuration: 'staging',
+  app_name: 'GetAPet',
+  app_base_url: 'https://getapet.dev',
+  api_base_url: 'https://api.getapet.dev/v1',
+  fe_base_url: 'https://api.getapet.dev/_fe',
+  login_url: 'https://getapet.dev/oauth/authorize',
+  logout_url: 'https://getapet.dev/oauth/logout',
+  log_level: 0,
+  enable_sentry: true,
+  sentry_traces_rate: 1.0,
+  sentry_dsn: '',
+  default_language: 'en-US',
+  supported_languages: ['en-US', 'de-DE'],
+  theme_color: '#4fb6b5',
+};
