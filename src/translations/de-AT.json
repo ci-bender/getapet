@@ -1,0 +1,21 @@
+{
+    "system": {
+        "APP_NAME": "GetAPet"
+    },
+    "about": {
+        "imprint": {
+            "title": "Impressum"
+        }
+    },
+    "components": {
+        "koan": {
+            "search": "Suche"
+        }
+    },
+    "footer": {
+        "copyright": "Alle Rechte vorbehalten."
+    },
+    "meta": {
+        "description": "GetAPet ist eine kostenlose App, die Sie mit verschiedenen Tierheimen verbindet."
+    }
+}
