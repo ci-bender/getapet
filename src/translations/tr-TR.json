@@ -1,5 +1,10 @@
 {
     "system": {
         "APP_NAME": "GetAPet"
+    },
+    "components": {
+        "koan": {
+            "search": ""
+        }
     }
 }
