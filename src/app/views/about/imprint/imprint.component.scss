@@ -1,0 +1,11 @@
+.container {
+  padding: 0 25px;
+  max-width: var(--container-width--md, 768px);
+}
+
+/* Large (lg) */
+@media (min-width: 1024px) {
+  .container {
+    padding: 0;
+  }
+}

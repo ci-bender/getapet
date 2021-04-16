@@ -11,7 +11,34 @@ html {
 body {
   font-family: Roboto, sans-serif;
   position: relative;
-  margin: 0;
   min-height: 100%;
   color: var(--color-text);
+}
+
+p {
+  padding: 1rem 0;
+  margin: 0;
+}
+
+[tabindex="-1"]:focus {
+  outline: 0;
+}
+
+// Container Settings
+
+.container-fluid {
+  padding: 0 25px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 25px;
+  max-width: var(--container-width--xxl, 1600px);
+}
+
+/* Medium (md) */
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
 }

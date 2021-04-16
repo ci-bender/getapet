@@ -1,10 +1,11 @@
-import { Injectable } from '@angular/core';
+import { Inject, Injectable } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
+import { DOCUMENT } from '@angular/common';
 
 import { Logger } from '@core/logger.service';
-import enUS from '../../../translations/en-US.json';
-import deDE from '../../../translations/de-DE.json';
+import enUS from '@translations/en-US.json';
+import deDE from '@translations/de-DE.json';
 
 const log = new Logger('I18nService');
 const languageKey = 'language';
@@ -18,7 +19,10 @@ export class I18nService {
 
   private langChangeSubscription!: Subscription;
 
-  constructor(private translateService: TranslateService) {
+  constructor(
+    private translateService: TranslateService,
+    @Inject(DOCUMENT) private document: Document,
+  ) {
     // Embed languages to avoid extra HTTP requests
     translateService.setTranslation('en-US', enUS);
     translateService.setTranslation('de-DE', deDE);
@@ -37,7 +41,11 @@ export class I18nService {
 
     // Warning: this subscription will always be alive for the app's lifetime
     this.langChangeSubscription = this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      // Set lang to local storage
       localStorage.setItem(languageKey, event.lang);
+
+      // Update html lang tag
+      this.document.documentElement.lang = event.lang.split('-')[0];
     });
   }
 
@@ -73,6 +81,10 @@ export class I18nService {
     }
 
     log.debug(`Language set to ${language}`);
+
+    // Set html lang tag
+    this.document.documentElement.lang = language.split('-')[0];
+
     this.translateService.use(language);
   }
 

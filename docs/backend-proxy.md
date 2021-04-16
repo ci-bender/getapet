@@ -19,7 +19,7 @@ const proxyConfig = [
   {
     context: '/api',
     pathRewrite: {'^/api': ''},
-    target: 'http://api.getapet.eu',
+    target: 'https://api.getapet.eu',
     changeOrigin: true
   }
 ];

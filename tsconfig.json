@@ -32,12 +32,13 @@
       "@modules/*": ["src/app/@modules/*"],
       "@layout": ["src/app/@layout"],
       "@layout/*": ["src/app/@layout/*"],
+      "@translations": ["src/translations"],
+      "@translations/*": ["src/translations/*"],
       "@env/*": ["src/environments/*"]
     }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
-    "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "preserveWhitespaces": true
   }

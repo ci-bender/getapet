@@ -1,7 +1,8 @@
-export interface MetaTags {
+export interface MetaTagsModel {
   date?: Date;
   author?: string;
-  title: string;
+  title?: string | undefined;
+  titleTranslate?: string | undefined;
   description?: string;
   keywords?: string[];
 }

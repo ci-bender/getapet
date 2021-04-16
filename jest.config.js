@@ -14,6 +14,8 @@ module.exports = {
     '@modules/(.*)': ['<rootDir>/src/app/@modules/$1'],
     '@layout': ['<rootDir>/src/app/@layout'],
     '@layout/(.*)': ['<rootDir>/src/app/@layout/$1'],
+    '@translations': ['<rootDir>/src/translations'],
+    '@translations/(.*)': ['<rootDir>/src/translations/$1'],
     '@env': '<rootDir>/src/environments/environment'
   },
   globals: {

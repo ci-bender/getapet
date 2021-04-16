@@ -41,10 +41,39 @@
           },
           "configurations": {
             "production": {
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "resourcesOutputPath": "assets",
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2mb",
+                  "maximumError": "10kb"
+                }
+              ],
+              "serviceWorker": true,
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
+                }
+              ]
+            },
+            "qa": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.qa.ts"
                 }
               ],
               "optimization": true,
@@ -54,6 +83,7 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
+              "resourcesOutputPath": "assets",
               "budgets": [
                 {
                   "type": "initial",
@@ -62,10 +92,21 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
+                  "maximumWarning": "2mb",
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "dev": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.dev.ts"
+                }
+              ],
+              "outputHashing": "all",
+              "extractLicenses": true,
+              "resourcesOutputPath": "assets"
             },
 			      "ci": {
               "progress": false
@@ -80,6 +121,12 @@
           "configurations": {
             "production": {
               "browserTarget": "getapet:build:production"
+            },
+            "qa": {
+              "browserTarget": "getapet:build:qa"
+            },
+            "dev": {
+              "browserTarget": "getapet:build:dev"
             },
             "ci": {
               "progress": false
@@ -128,6 +175,12 @@
           "configurations": {
             "production": {
               "devServerTarget": "getapet:serve:production"
+            },
+            "qa": {
+              "devServerTarget": "getapet:serve:qa"
+            },
+            "dev": {
+              "devServerTarget": "getapet:serve:dev"
             }
           }
         }

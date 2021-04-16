@@ -12,15 +12,19 @@ import { env } from './.env';
 
 export const environment = {
   production: false,
-  version: env.npm_package_version + '-dev',
-  appName: 'GetAPet',
-  appUrl: 'http://localhost:4200',
-  serverUrl: 'http://localhost:8080',
-  enableSentry: false,
-  sentryUrl: '',
-  defaultLanguage: 'en-US',
-  supportedLanguages: ['en-US', 'de-DE'],
-  themeColor: '#4fb6b5',
+  version: env.npm_package_version + '-local',
+  app_name: 'GetAPet',
+  app_base_url: 'http://localhost:4200',
+  api_base_url: 'http://localhost:8080/v1',
+  fe_base_url: 'http://localhost:8080/_fe',
+  login_url: 'http://localhost:4000/oauth/authorize',
+  logout_url: 'http://localhost:4000/oauth/logout',
+  log_level: 4,
+  enable_sentry: false,
+  sentry_dsn: '',
+  default_language: 'en-US',
+  supported_languages: ['en-US', 'de-DE'],
+  theme_color: '#4fb6b5',
 };
 
 /*

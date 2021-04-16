@@ -14,7 +14,7 @@ export class SentryErrorHandler implements ErrorHandler {
   constructor() {
     // Sentry inside the constructor instantiate it only if needed
     Sentry.init({
-      dsn: environment.sentryUrl,
+      dsn: environment.sentry_dsn,
     });
   }
 
@@ -23,7 +23,7 @@ export class SentryErrorHandler implements ErrorHandler {
     const eventId = Sentry.captureException(error.originalError || error);
     // Sentry.showReportDialog({ eventId });
 
-    log.debug(`Error Handler: ${eventId}`);
+    log.error(`Error Handler: ${eventId}`);
   }
 }
 

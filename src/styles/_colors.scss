@@ -1,10 +1,15 @@
 @mixin theme-light {
+  --color-brand: #00b1b2;
   --color-text: #383838;
+  --color-text-light: #767676;
   --color-background--layer-0: #fff;
+  --color-background--layer-10: #F7F7F7;
   --color-logo--layer-0: #00b1b2;
+  --color-logo--layer-10: #767676;
   --color-card-background: #f5f5f5;
   --color-card-background--hover: #fafafa;
-  --color-border: #e8e8e8;
+  --color-border: #ddd;
+  --color-border--layer-10: #EBEBEB;
   --color-shadow: rgba(0, 0, 0, 0.15);
   --color-shadow--hover: rgba(0, 0, 0, 0.1);
   --color-spinner: #ddd;
@@ -12,6 +17,7 @@
 }
 
 @mixin theme-dark {
+  --color-brand: #00b1b2;
   --color-text: #ededed;
   --color-background--layer-0: linear-gradient(180deg, #313235 0%, #28292d 100%);
   --color-logo--layer-0: #00b1b2;

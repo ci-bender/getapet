@@ -1,7 +1,6 @@
 {
   "extends": [
     "stylelint-config-standard",
-    "stylelint-config-recommended",
     "stylelint-config-recommended-scss",
     "stylelint-config-prettier"
   ],
@@ -39,7 +38,7 @@
         "ignorePseudoElements": ["ng-deep"]
       }
     ],
-    "unit-allowed-list": ["px", "%", "em", "rem", "vw", "vh", "deg", "s", "turn", "fr"],
+    "unit-allowed-list": ["px", "%", "em", "rem", "vw", "vh", "deg", "s", "turn", "fr", "ms"],
     "max-empty-lines": 2,
     "max-line-length": 120
   }

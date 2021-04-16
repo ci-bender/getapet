@@ -2,5 +2,21 @@
 	"system": {
 		"APP_NAME": "GetAPet",
 		"Version": "Version"
-	}
+	},
+  "about": {
+    "imprint": {
+      "title": "Imprint"
+    }
+  },
+  "components": {
+    "koan": {
+      "search": "Search"
+    }
+  },
+  "footer": {
+    "copyright": "All rights reserved."
+  },
+  "meta": {
+    "description": "GetAPet is a free app keeping you connected to several animal shelters."
+  }
 }
