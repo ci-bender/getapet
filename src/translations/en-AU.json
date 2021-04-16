@@ -1,21 +1,21 @@
 {
     "system": {
-        "APP_NAME": ""
+        "APP_NAME": "GetAPet"
     },
     "about": {
         "imprint": {
-            "title": ""
+            "title": "Imprint"
         }
     },
     "components": {
         "koan": {
-            "search": ""
+            "search": "Search"
         }
     },
     "footer": {
-        "copyright": ""
+        "copyright": "All rights reserved."
     },
     "meta": {
-        "description": ""
+        "description": "GetAPet is a free app keeping you connected to several animal shelters."
     }
 }
