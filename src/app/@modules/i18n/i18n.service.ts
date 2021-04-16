@@ -19,10 +19,7 @@ export class I18nService {
 
   private langChangeSubscription!: Subscription;
 
-  constructor(
-    private translateService: TranslateService,
-    @Inject(DOCUMENT) private document: Document,
-  ) {
+  constructor(private translateService: TranslateService, @Inject(DOCUMENT) private document: Document) {
     // Embed languages to avoid extra HTTP requests
     translateService.setTranslation('en-US', enUS);
     translateService.setTranslation('de-DE', deDE);

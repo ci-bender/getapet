@@ -8,9 +8,8 @@ describe('SearchKoanComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SearchKoanComponent ]
-    })
-    .compileComponents();
+      declarations: [SearchKoanComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

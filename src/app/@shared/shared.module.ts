@@ -12,26 +12,8 @@ import { CardComponent } from '@shared/components/card/card.component';
 import { SearchKoanComponent } from '@shared/components/search-koan/search-koan.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    TranslateModule,
-    I18nModule
-  ],
-  declarations: [
-    LoadingSpinnerComponent,
-    FooterComponent,
-    HeaderComponent,
-    HeaderAboutComponent,
-    CardComponent,
-    SearchKoanComponent
-  ],
-  exports: [
-    LoadingSpinnerComponent,
-    FooterComponent,
-    HeaderComponent,
-    HeaderAboutComponent,
-    CardComponent,
-    SearchKoanComponent
-  ],
+  imports: [CommonModule, TranslateModule, I18nModule],
+  declarations: [LoadingSpinnerComponent, FooterComponent, HeaderComponent, HeaderAboutComponent, CardComponent, SearchKoanComponent],
+  exports: [LoadingSpinnerComponent, FooterComponent, HeaderComponent, HeaderAboutComponent, CardComponent, SearchKoanComponent],
 })
 export class SharedModule {}

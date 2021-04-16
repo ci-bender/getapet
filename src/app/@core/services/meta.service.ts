@@ -6,7 +6,7 @@ import { environment } from '@env/environment';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class MetaService {
   public setTitle: string;
@@ -14,15 +14,9 @@ export class MetaService {
   public basicKeywords = [''];
   public description: string | 'GetAPet is a free app keeping you connected to several animal shelters.';
 
-  constructor(
-    private router: Router,
-    private metaService: Meta,
-    private titleService: Title,
-    private translateService: TranslateService
-  ) { }
+  constructor(private router: Router, private metaService: Meta, private titleService: Title, private translateService: TranslateService) {}
 
   public setBasicMetaTags(content: MetaTagsModel): void {
-
     // Get translate strings
     if (content.title === undefined) {
       // Set translated title with "titleTranslate: ''"
@@ -65,7 +59,7 @@ export class MetaService {
     // META DATA
     this.metaService.addTag({
       name: 'description',
-      content: content.description ? content.description : this.description
+      content: content.description ? content.description : this.description,
     });
     this.metaService.addTag({ name: 'keywords', content: content.keywords.concat(this.basicKeywords).join(',') });
     this.metaService.addTag({ name: 'author', content: content.author ? content.author : this.author });

@@ -14,15 +14,8 @@ import { I18nModule } from '@modules/i18n';
 import { AuthModule } from '@modules/auth';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    TranslateModule,
-    SharedModule,
-    I18nModule,
-    AuthModule,
-    RouterModule
-  ],
+  imports: [CommonModule, TranslateModule, SharedModule, I18nModule, AuthModule, RouterModule],
   declarations: [DefaultComponent, AboutComponent, HelpComponent],
-  exports: [DefaultComponent, AboutComponent, HelpComponent]
+  exports: [DefaultComponent, AboutComponent, HelpComponent],
 })
-export class LayoutModule { }
+export class LayoutModule {}

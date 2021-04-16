@@ -8,11 +8,10 @@ const log = new Logger('Layout');
 @Component({
   selector: 'layout-default',
   templateUrl: './default.component.html',
-  styleUrls: ['./default.component.scss']
+  styleUrls: ['./default.component.scss'],
 })
 export class DefaultComponent implements OnInit {
-
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     // Setup logger
@@ -22,5 +21,4 @@ export class DefaultComponent implements OnInit {
 
     log.debug(`Default init.`);
   }
-
 }
