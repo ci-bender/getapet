@@ -1,5 +1,21 @@
 {
     "system": {
         "APP_NAME": "GetAPet"
+    },
+    "footer": {
+        "copyright": ""
+    },
+    "meta": {
+        "description": ""
+    },
+    "about": {
+        "imprint": {
+            "title": ""
+        }
+    },
+    "components": {
+        "koan": {
+            "search": ""
+        }
     }
 }
