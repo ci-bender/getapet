@@ -6,5 +6,16 @@
         "koan": {
             "search": ""
         }
+    },
+    "about": {
+        "imprint": {
+            "title": ""
+        }
+    },
+    "footer": {
+        "copyright": ""
+    },
+    "meta": {
+        "description": ""
     }
 }
