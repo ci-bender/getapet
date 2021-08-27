@@ -2,17 +2,9 @@
     "system": {
         "APP_NAME": "GetAPet"
     },
-    "meta": {
-        "description": ""
-    },
     "about": {
         "imprint": {
             "title": ""
-        }
-    },
-    "components": {
-        "koan": {
-            "search": ""
         }
     },
     "footer": {
